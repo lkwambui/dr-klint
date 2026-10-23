@@ -118,7 +118,7 @@ The enquiry form validates required fields, email format, contact preference, ca
 
 ## Approval checklist before launch
 
-1. Approve or replace the illustrative portrait and photography. The current hero image is stock imagery and is **not** Dr. Klint.
+1. Confirm permission to use the supplied hero portrait, and approve or replace the remaining illustrative photography.
 2. Confirm professional qualifications, registration, specialty, and biography.
 3. Replace sample Health Insights cards with approved videos/articles and real, verified links.
 4. Confirm the supplied YouTube and Instagram profiles are approved for publication.
@@ -134,4 +134,4 @@ The floating WhatsApp control uses the number supplied for this demo, stored in 
 
 ## Attribution
 
-Illustrative photography is sourced from Unsplash and used under the Unsplash license. These images are placeholders and should be replaced with approved brand photography before launch.
+Illustrative photography is sourced from Unsplash and used under the Unsplash license. These images are placeholders and should be replaced with approved brand photography before launch. The supplied hero portrait should be approved for publication before launch.

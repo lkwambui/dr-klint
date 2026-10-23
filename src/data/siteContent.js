@@ -68,10 +68,10 @@ export const siteContent = {
       { icon: "HeartHandshake", label: "People-first approach" },
     ],
     portrait: {
-      src: "/images/hero-portrait.jpg",
-      alt: "Illustrative portrait of a healthcare professional, used as a placeholder and not representing Dr. Klint.",
+      src: "/images/dr-klintt.jpeg",
+      alt: "Portrait of Dr. Klint wearing a white coat.",
       caption:
-        "Illustrative placeholder portrait — not Dr. Klint. Approved photography will replace this image before launch.",
+        "Portrait supplied for this website concept. Confirm permission for website use before launch.",
     },
   },
 
