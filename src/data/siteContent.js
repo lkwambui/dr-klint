@@ -24,8 +24,13 @@ export const siteContent = {
     },
     youtube: {
       label: "YouTube",
-      href: null,
-      note: "Channel link pending verification.",
+      href: "https://www.youtube.com/@drklint",
+      handle: "@drklint",
+    },
+    instagram: {
+      label: "Instagram",
+      href: "https://www.instagram.com/drklintt/",
+      handle: "@drklintt",
     },
     email: {
       label: "Email",
@@ -37,8 +42,8 @@ export const siteContent = {
   contact: {
     email: "drklintt@gmail.com",
     emailNote: "Email address to be confirmed before publication.",
-    phone: null,
-    phoneNote: "No consultation phone number has been confirmed. WhatsApp contact is available via the floating button.",
+    phone: "+254 705 920234",
+    phoneNote: "Also available on WhatsApp via the floating contact button.",
     whatsapp: {
       // Supplied for this demo; confirm ownership and public-use approval before launch.
       phoneNumber: "254705920234",
@@ -250,11 +255,21 @@ export const siteContent = {
         platform: "YouTube",
         icon: "youtube",
         title: "Longer-form insights.",
-        detail: "Channel link pending",
-        description: "A YouTube destination will be added once the correct channel URL is confirmed.",
-        href: null,
-        cta: "Link to be verified",
-        status: "Not yet published",
+        detail: "@drklint",
+        description: "Longer-form videos and health education on Dr. Klint's channel.",
+        href: "https://www.youtube.com/@drklint",
+        cta: "Visit YouTube",
+        status: "Public profile",
+      },
+      {
+        platform: "Instagram",
+        icon: "instagram",
+        title: "Health insights, in your feed.",
+        detail: "@drklintt",
+        description: "Follow Dr. Klint for more health education and updates.",
+        href: "https://www.instagram.com/drklintt/",
+        cta: "Follow on Instagram",
+        status: "Public profile",
       },
     ],
   },
@@ -275,9 +290,9 @@ export const siteContent = {
       {
         icon: "Phone",
         label: "Phone",
-        value: "Not provided",
+        value: "",
         href: null,
-        note: "No consultation phone number has been confirmed. Use the floating WhatsApp button for enquiries.",
+        note: "Call Dr. Klint directly, or use the floating WhatsApp button.",
       },
     ],
     beforeYouSend: [

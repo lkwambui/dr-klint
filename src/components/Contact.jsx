@@ -129,6 +129,11 @@ export default function Contact() {
             <div className="mt-8 space-y-3">
               {contactSection.details.map((detail) => {
                 const Icon = contactIcons[detail.icon] ?? Mail
+                const isPhone = detail.label === 'Phone' && contact.phone
+                const detailValue = isPhone ? contact.phone : detail.value
+                const detailHref = isPhone
+                  ? `tel:${contact.phone.replace(/[^\d+]/g, '')}`
+                  : detail.href
                 const content = (
                   <>
                     <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[0.85rem] bg-mint text-brand">
@@ -138,16 +143,16 @@ export default function Contact() {
                       <span className="block text-[0.62rem] font-bold uppercase tracking-[0.14em] text-muted">
                         {detail.label}
                       </span>
-                      <span className="mt-1 block truncate text-sm font-bold text-ink">{detail.value}</span>
+                      <span className="mt-1 block truncate text-sm font-bold text-ink">{detailValue}</span>
                       <span className="mt-1 block text-[0.7rem] leading-5 text-muted">{detail.note}</span>
                     </span>
                   </>
                 )
 
-                return detail.href ? (
+                return detailHref ? (
                   <a
                     key={detail.label}
-                    href={detail.href}
+                    href={detailHref}
                     className="flex items-start gap-3 rounded-2xl border border-line bg-white/70 p-4 transition duration-300 hover:border-brand/25 hover:bg-white"
                   >
                     {content}

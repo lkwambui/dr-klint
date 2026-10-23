@@ -1,6 +1,6 @@
 import { ArrowUpRight, Mail, ShieldCheck } from 'lucide-react'
 import { siteContent } from '../data/siteContent'
-import { MedicalCross, TikTokIcon, YouTubeIcon } from './ui/BrandIcons'
+import { InstagramIcon, MedicalCross, TikTokIcon, YouTubeIcon } from './ui/BrandIcons'
 import Container from './ui/Container'
 
 export default function Footer() {
@@ -46,13 +46,24 @@ export default function Footer() {
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
               </a>
-              <span
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/[0.06] bg-white/[0.02] text-white/45"
-                role="img"
-                aria-label="YouTube channel link pending verification"
+              <a
+                href={socials.youtube.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Visit Dr. Klint on YouTube"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/[0.05] text-white/80 transition duration-300 hover:border-accent/30 hover:bg-white/10 hover:text-accent"
               >
                 <YouTubeIcon className="h-4 w-4" />
-              </span>
+              </a>
+              <a
+                href={socials.instagram.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="Follow Dr. Klint on Instagram"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/[0.05] text-white/80 transition duration-300 hover:border-accent/30 hover:bg-white/10 hover:text-accent"
+              >
+                <InstagramIcon className="h-4 w-4" />
+              </a>
             </div>
 
             <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.13em] text-white/65">
@@ -100,7 +111,26 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <span className="text-[0.78rem] text-white/60">YouTube · pending verification</span>
+                <a
+                  href={socials.youtube.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-white/65 transition-colors hover:text-accent"
+                >
+                  YouTube
+                  <ArrowUpRight className="h-3 w-3" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={socials.instagram.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-white/65 transition-colors hover:text-accent"
+                >
+                  Instagram
+                  <ArrowUpRight className="h-3 w-3" aria-hidden="true" />
+                </a>
               </li>
             </ul>
           </div>
@@ -119,6 +149,12 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-[0.8rem] font-medium text-white/65">Phone</p>
+                <a
+                  href={`tel:${contact.phone.replace(/[^\d+]/g, '')}`}
+                  className="mt-1 block text-[0.8rem] font-medium text-white/70 transition-colors hover:text-accent"
+                >
+                  {contact.phone}
+                </a>
                 <p className="mt-1 text-[0.65rem] leading-5 text-white/60">{contact.phoneNote}</p>
               </div>
               <p className="text-[0.65rem] leading-5 text-white/60">{contact.enquiryNote}</p>

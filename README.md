@@ -121,7 +121,7 @@ The enquiry form validates required fields, email format, contact preference, ca
 1. Approve or replace the illustrative portrait and photography. The current hero image is stock imagery and is **not** Dr. Klint.
 2. Confirm professional qualifications, registration, specialty, and biography.
 3. Replace sample Health Insights cards with approved videos/articles and real, verified links.
-4. Verify and add the official YouTube channel URL.
+4. Confirm the supplied YouTube and Instagram profiles are approved for publication.
 5. Confirm `drklintt@gmail.com` and obtain Dr. Klint's approval to publish the supplied WhatsApp number.
 6. Approve the service descriptions, disclaimers, and consultation-enquiry wording.
 7. Review all social metrics before publishing numbers (none are displayed now).

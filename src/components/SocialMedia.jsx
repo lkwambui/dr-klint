@@ -1,6 +1,6 @@
 import { ArrowUpRight, Mail } from 'lucide-react'
 import { siteContent } from '../data/siteContent'
-import { TikTokIcon, YouTubeIcon } from './ui/BrandIcons'
+import { InstagramIcon, TikTokIcon, YouTubeIcon } from './ui/BrandIcons'
 import Container from './ui/Container'
 import Reveal from './ui/Reveal'
 import SectionHeading from './ui/SectionHeading'
@@ -8,6 +8,7 @@ import SectionHeading from './ui/SectionHeading'
 const socialIcons = {
   tiktok: TikTokIcon,
   youtube: YouTubeIcon,
+  instagram: InstagramIcon,
   mail: Mail,
 }
 
@@ -37,7 +38,7 @@ export default function SocialMedia() {
           tone="dark"
         />
 
-        <div className="mt-12 grid gap-4 md:grid-cols-3">
+        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {social.cards.map((card, index) => {
             const Icon = socialIcons[card.icon] ?? Mail
             const isLight = index === 0
