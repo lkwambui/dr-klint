@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dr. Klint">
+  <rect width="64" height="64" rx="16" fill="#0F766E"/>
+  <circle cx="32" cy="32" r="21" fill="none" stroke="#8DD9C6" stroke-opacity=".5" stroke-width="1.5"/>
+  <path d="M27 17h10v10h10v10H37v10H27V37H17V27h10V17Z" fill="#FAFCFB"/>
+</svg>
